@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 0.2a
 Name:		texlive-dynblocks
-Version:	0.2a
-Release:	9
+Version:	0.2b
+Release:	1
 Summary:	A simple way to create dynamic blocks for Beamer
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/dynblocks
