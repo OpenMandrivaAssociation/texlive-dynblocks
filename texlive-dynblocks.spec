@@ -1,18 +1,12 @@
-# revision 27838
-# category Package
-# catalog-ctan /macros/latex/contrib/beamer-contrib/dynblocks
-# catalog-date 2012-09-27 16:18:28 +0200
-# catalog-license lppl1.3
-# catalog-version 0.2a
 Name:		texlive-dynblocks
-Version:	0.2b
-Release:	3
+Version:	35193
+Release:	1
 Summary:	A simple way to create dynamic blocks for Beamer
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/dynblocks
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dynblocks.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dynblocks.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dynblocks.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dynblocks.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ The package provides full customisation of the aspect and
 dimensions of blocks inside a presentation.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -57,22 +51,10 @@ dimensions of blocks inside a presentation.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Fri Oct 26 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2a-1
-+ Revision: 819980
-- Update to latest release.
-
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 813471
-- Import texlive-dynblocks
-- Import texlive-dynblocks
-
