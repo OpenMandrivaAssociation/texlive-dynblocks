@@ -1,6 +1,6 @@
 Name:		texlive-dynblocks
 Version:	35193
-Release:	1
+Release:	2
 Summary:	A simple way to create dynamic blocks for Beamer
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/dynblocks
