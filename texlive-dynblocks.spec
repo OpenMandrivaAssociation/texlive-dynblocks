@@ -3,7 +3,7 @@ Version:	35193
 Release:	2
 Summary:	A simple way to create dynamic blocks for Beamer
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/dynblocks
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/dynblocks
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dynblocks.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dynblocks.doc.r%{version}.tar.xz
